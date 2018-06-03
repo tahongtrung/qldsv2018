@@ -649,7 +649,7 @@ int checkMaMH(NODEMH root,char token[]){
 	}
 	
 }
-void InDSMH(NODEMH root,int sp,int i){
+void InDSMH(NODEMH root,int sp,int &i){
 	if (root != NULL)
 	{
 		InDSMH(root->left,sp,i);
@@ -660,6 +660,7 @@ void InDSMH(NODEMH root,int sp,int i){
 		GotoXY(sp+sp+sp+sp,i+6); printf("%d",root->mh.STCTH);
 		i++;	
 		InDSMH(root->right,sp,i);
+		
 	}
 
 }

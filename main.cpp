@@ -12,6 +12,8 @@
 #include "alg.cpp"
 
 int main(){
+	
+	
 	SetConsoleTitle("QUAN LI DIEM SINH VIEN");
 	SetConsolePos(350,100);
 	int out=0,pos=0;
