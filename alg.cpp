@@ -6,7 +6,7 @@ int KeyPressed(int dung, int n, int ck);
 void InputCheck(int n,char* s,str menumh[8],int ck);
 void GridView(char s[],int tab,str header[4],int ck);
 void InsertDiem(NODE &K,_diem d);
-void InsertNodeMH(NODEMH root,_monhoc mh);
+void InsertNodeMH(NODEMH &root,_monhoc mh);
 NODEPTR SearchSV(NODEPTR t,char masv[]);
 int checkFull(str stemp[],int n);
 int IsDigital(char A[]);
@@ -696,7 +696,7 @@ void InsertNodeSV(NODEPTR &p, _sinhvien sv){
 			InsertNodeSV(p->right,sv);
 	}
 }
-void InsertNodeMH(NODEMH p, _monhoc mh){
+void InsertNodeMH(NODEMH &p, _monhoc mh){
 	if(p == NULL){
 		p = new nodemh;
 		p->mh=mh;
