@@ -1,6 +1,7 @@
 #ifndef ALG_CPP_
 #define ALG_CPP_
 #include "struct.h"
+//xem xet cac ham co can tham chieu &x hay k
 //--prototype
 int KeyPressed(int dung, int n, int ck);
 void InputCheck(int n,char* s,str menumh[8],int ck);
