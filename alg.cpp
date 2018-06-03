@@ -7,14 +7,15 @@ void InputCheck(int n,char* s,str menumh[8],int ck);
 void GridView(char s[],int tab,str header[4],int ck);
 void InsertDiem(NODE &K,_diem d);
 void InsertNodeMH(NODEMH &root,_monhoc mh);
-NODEPTR SearchSV(NODEPTR t,char masv[]);
+
+NODEPTR SearchSV(NODEPTR t,char masv[]); //sua lai thanh tiem kiem node lienket don
 int checkFull(str stemp[],int n);
 int IsDigital(char A[]);
 int checkMaMH(NODEMH root,char token[]);
 int checkMalop(char stemp[]);
 int checkDiem(char A[]);
-void SwapSV(_sinhvien &sva, _sinhvien &svb);
-void InsertNodeSV(NODEPTR &p, _sinhvien sv);
+void SwapSV(_sinhvien &sva, _sinhvien &svb); 
+void InsertNodeSV(NODEPTR &p, _sinhvien sv);//sua la thanh insert node lienket don
 void InsertDiem(NODE &K,_diem d);
 int duyetdslk(NODE d,char mamh[]);
 //------UDF for graphics----
@@ -287,6 +288,7 @@ int KeyPressed(int dung,int n,int ck){
 							strcpy(sv.TEN,stemp[2]);
 							strcpy(sv.PHAI,stemp[3]);
 							strcpy(sv.SODT,stemp[4]);
+							
 							InsertNodeSV(dsl.nodes[n].ptrdssv,sv);				
 						}
 						if(ck == 2){ 
